@@ -17,28 +17,31 @@
 body {
     display: flex;
     justify-content: center;
-} 
+}
 
-main{
-display: flex;
-/*
+main {
+    display: flex;
+    /*
 padding: 0px 50px; */
-flex-direction: column;
-align-items: flex-start;
-gap: 35px;
-/*align-self: stretch; */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    /*align-self: stretch; */
 
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    /*padding: 0 50px;*/ /*pa besoin de la mettre */
+    /*padding: 0 50px;*/
+    /*pa besoin de la mettre */
     box-sizing: border-box;
 }
-.logo_box{
+
+.logo_box {
     padding: 30px 50px;
 }
+
 .logo_box img {
     width: 61.09px;
     height: 19px;
@@ -47,17 +50,21 @@ gap: 35px;
 a {
     color: inherit;
     text-decoration: none;
+    flex: 1 1 0;
 }
+
 .liens_header a {
     color: var(--Blue, #0065FC);
     text-align: center;
     height: 30px;
     padding-top: 14px;
 }
+
 .liens_header a:hover {
     border-top: 2px solid var(--main-color);
     padding-top: 14px;
 }
+
 /* il y un prob f hiver */
 
 
@@ -70,15 +77,18 @@ a {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1)); /*c'est pour le petit effet ombre sur le contenaire blanc */
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    /*c'est pour le petit effet ombre sur le contenaire blanc */
 }
 
 .card img {
-    object-fit: cover; /* need to be disscussed */
+    object-fit: cover;
+    /* need to be disscussed */
 }
 
 .card-title {
-    font-size: 16px; /*je vois l'interet */
+    font-size: 16px;
+    /*je vois l'interet */
     padding: 20px 19px;
     margin: 0;
 }
@@ -91,68 +101,80 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
-table{
+
+table {
     border-collapse: collapse;
 }
+
 header nav {
-   /* height: 80px;*/
+    /* height: 80px;*/
     display: flex;
     flex-direction: row;
-   /* align-items: center;*/
+    /* align-items: center;*/
     justify-content: space-between;
 }
 
-nav div  {
+nav div {
     display: flex;
     height: 30px;
     gap: 60px;
-} 
+}
+
 .headlines p {
     margin-top: 8px;
     margin-bottom: 0px;
 }
-form{
+
+form {
     display: flex;
     flex-direction: row;
-    
+
 }
-input[type="text"]  ,input[type="submit"] , .Filtres p , button {
+
+input[type="text"],
+input[type="submit"],
+.Filtres p,
+button {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     padding: 15px 16px;
     border-radius: 0px 15px 15px 0px;
     border: 1px solid var(--Blue, #0065FC);
     background: var(--Blue, #0065FC);
     color: var(--White, #FFF);
 }
-input[type="text"]{
+
+input[type="text"] {
     height: 49px;
     width: 180px;
     border: 1px solid var(--Grey, #F2F2F2);
     background: var(--White, #FFF);
 }
-label[for="recherche"]
-{
+
+label[for="recherche"] {
     width: 50px;
     height: 49px;
     position: relative;
     border-radius: 15px 0px 0px 15px
-
 }
-.fa-location-dot{
+
+.fa-location-dot {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.Filtres{
+
+.Filtres {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
+
 button {
     display: flex;
     flex-direction: row;
@@ -164,18 +186,22 @@ button {
     align-items: center;
     background-color: white;
 }
-button:hover{
+
+button:hover {
     background: var(--blue-light, #DEEBFF);
 }
-.i_info{
+
+.i_info {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
+
 .i_info p {
-    margin: 0px;
+    margin: auto;
 }
-i.fa-solid.fa-info{
+
+i.fa-solid.fa-info {
     color: #0065fc;
     width: 24px;
     height: 24px;
@@ -183,7 +209,8 @@ i.fa-solid.fa-info{
     position: relative;
     border: 2px solid var(--grey-tint-2, #D9D9D9);
 }
-i.fa-solid.fa-info::before{
+
+i.fa-solid.fa-info::before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -196,7 +223,8 @@ i.fa-solid.fa-info::before{
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section , footer{
+.hebergements-and-populaires section,
+footer {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -207,18 +235,20 @@ i.fa-solid.fa-info::before{
 .hebergements {
     width: 65%;
 }
+
 .main-cards img {
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
 }
-.card-content{
+
+.card-content {
     display: flex;
-padding: 0px 15px;
-flex-direction: column;
-align-items: flex-start;
-gap: 8px;
-align-self: stretch;
+    padding: 0px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
 }
 
 /****** Populaires ***********/
@@ -226,7 +256,7 @@ align-self: stretch;
     width: 32%;
 }
 
-.populaires-title   {
+.populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -265,20 +295,24 @@ align-self: stretch;
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-.main-cards{
-    
+
+.main-cards {
+
     display: flex;
     flex-direction: row;
     gap: 30px;
-    justify-content: center;
+    /* justify-content: center; ERROR */
+    justify-content: space-between;
     margin-bottom: 30px;
 
 }
+
 .card-txt h3 {
     padding: 0;
 
 }
-.activites{
+
+.activites {
     display: flex;
     padding: 30px;
     flex-direction: column;
@@ -286,57 +320,65 @@ align-self: stretch;
     gap: 30px;
     align-self: stretch;
 }
-.activites div  
-{
-    
+
+.activites div {
+
     display: flex;
     flex-direction: row;
     gap: 30px;
-  /*  justify-content: center; pa besoin de la mettre */
-   /* margin-bottom: 30px;*/
+    /*  justify-content: center; pa besoin de la mettre */
+    /* margin-bottom: 30px;*/
 
-} 
+}
+
 .activites div div {
     display: flex;
     flex-direction: column;
     gap: 0;
+    flex: 1 1 0;
 }
+
 .activites_contenaire img {
     height: 380px;
     width: 100%;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-.main_footer , .acceuil{
+
+.main_footer,
+.acceuil {
     display: flex;
-padding: 0px 50px;
-flex-direction: column;
-align-items: flex-start;
-gap: 35px;
-/*align-self: stretch; */
-.acceuil{
-    padding: 0px;
+    padding: 0px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+
+    /*align-self: stretch; */
+    .acceuil {
+        padding: 0px;
+
+    }
 
 }
 
-}
 footer {
     display: flex;
-    align-items: center;    
+    align-items: center;
     align-self: stretch;
     border-radius: 0;
     padding: 0px;
 }
 
-.layout{
+.layout {
     display: flex;
-padding: 20px;
-flex-direction: column;
-align-items: flex-start;
-gap: 15px;
-flex: 1 0 0;
-align-self: stretch;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex: 1 0 0;
+    align-self: stretch;
 }
+
 .layout h4 {
     margin: 0px;
 }
@@ -380,7 +422,7 @@ align-self: stretch;
 }
 
  /*Small devices (phones, less than 768px) */
-  
+
 /*
 @media (max-width: 767.98px) {
     
