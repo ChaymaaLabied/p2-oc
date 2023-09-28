@@ -17,6 +17,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 .flex-column , main , .card-content , .populaires-cards , .activites_contenaire{
     display: flex;
@@ -51,13 +52,14 @@ a {
 }
 /********* header********/
 .links_header a {
-    color: var(--Blue, #0065FC);
     text-align: center;
     height: 30px;
     padding-top: 14px;
+    border-top: 2px solid transparent;
 }
 
 .links_header a:hover {
+    color: var(--Blue, #0065FC);
     border-top: 2px solid var(--main-color);
     padding-top: 14px;
 }
@@ -92,11 +94,11 @@ nav div {
 
 input[type="text"],
 input[type="submit"],
-.Filtres p,
 button {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
+    
 }
 
 input[type="submit"] {
@@ -128,10 +130,12 @@ label[for="recherche"] {
     transform: translate(-50%, -50%);
 }
 
-.Filtres , .main-cards{
+.gap , .main-cards{
     gap: 10px;
 }
-
+.weight{
+    font-weight: 700;
+}
 button {
     border-radius: 25px;
     border: 2px solid var(--grey-tint-2, #D9D9D9);
