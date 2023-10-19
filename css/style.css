@@ -241,14 +241,15 @@ i.fa-solid.fa-info::before {
     gap: 30px;
 }
 
+#activites a , #hebergements a {
+    flex: 1 1 0;
+}
+
+
 /****** Hebergements ***********/
 
 #hebergements {
     width: 65%;
-}
-
-#hebergements a {
-    flex: 1 1 0;
 }
 
 .main-cards img {
@@ -258,15 +259,17 @@ i.fa-solid.fa-info::before {
     border-radius: 20px 20px 0px 0px;
 }
 
-.flex-column.card-content.original{
+.flex-column.card-content.original {
     padding-bottom: 15px;
     padding-right: 15px;
 }
 
+.main-cards .card {
+    height: 100%;
+}
 
 
 /****** Populaires ***********/
-
 
 .populaires {
     width: 32%;
@@ -312,7 +315,6 @@ i.fa-solid.fa-info::before {
 
 .activites_contenaire {
     gap: 0;
-    flex: 1 1 0;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 1px rgba(0, 0, 0, 0.10);
 }
@@ -324,6 +326,9 @@ i.fa-solid.fa-info::before {
     border-radius: 20px 20px 0px 0px;
 }
 
+.flex-column.activites_contenaire {
+    height: 100%;
+}
 /**** footer*****/
 
 footer {
@@ -331,8 +336,6 @@ footer {
     align-items: center;
     align-self: stretch;
     box-sizing: border-box;
-   /* border-radius: 0;
-    padding: 0px;*/ /* pa besoin de les mettre */
 }
 
 .layout {
@@ -390,7 +393,7 @@ footer {
 
  /*Small devices (phones, less than 768px) */
 
-@media (max-width: 767.98px) {
+@media (max-width: 767.98px) and (min-width: 320px) {
     /****in common ****/
     
     .flex , .populaires-cards {
